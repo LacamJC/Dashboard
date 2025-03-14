@@ -3,7 +3,6 @@ import Dashboard from './dashboard/Dashboard';
 function App() {
   return (
     <>
-      <h1>Teste</h1>
       <Dashboard/>
     </>
   );
