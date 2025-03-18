@@ -26,11 +26,15 @@
 
         &:hover {
             box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.411);
-            transform: translate(5px, -5px);
+            // transform: translate(5px, -5px);
 
             color: white;
             background-color: $cor1;
+            
+            transform: ;
         }
+        
+        
 
         width: 300px;
 

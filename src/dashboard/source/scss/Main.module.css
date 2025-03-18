@@ -77,9 +77,9 @@
 }
 .kpi_card .card:hover {
   box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.411);
-  transform: translate(5px, -5px);
   color: white;
   background-color: #354b9c;
+  transform: perspective();
 }
 .kpi_card .card h3 {
   font-size: 1rem;
@@ -142,6 +142,13 @@ nav .upe .title {
   color: #5a5a5a;
   font-size: 1.5rem;
   margin-left: 15px;
+}
+@media screen and (max-width: 620px) {
+  nav .upe .title {
+    color: red;
+    font-size: 0.5rem;
+    display: none;
+  }
 }
 nav .logo {
   width: 80px;
