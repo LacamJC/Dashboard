@@ -11,7 +11,7 @@ const Contato = () => {
         <>
             <div className={`${styles.help}`}>
               
-                    <span>Encontrou algum problema ?</span>
+                    <span>Em caso de dúvida</span>
            
                 <a href={link} target="_blank">
                     <button >
