@@ -1,0 +1,25 @@
+@import "../../variables";
+
+.help {
+    border: 2px solid $cor1;
+    color: $cor1;
+    // width: max-content;
+    // margin: auto
+    h4 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+
+    ul {
+        li {
+            font-size: 1.4rem;
+
+            strong{
+                font-size: 1.4rem;
+            }
+        }
+    }
+}

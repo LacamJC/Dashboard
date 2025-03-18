@@ -2,6 +2,10 @@
 @import "./components/kpi_card/kpi_card";
 @import "./components/nav/Nav.module.scss";
 
+@import "./variables";
+
+
+
 .check{
     // position: sticky;
     top: 0;
@@ -12,3 +16,4 @@
 
     // transform: translateX(90%);
 }
+

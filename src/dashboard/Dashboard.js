@@ -8,7 +8,11 @@ import Header from "../dashboard/source/scss/components/header/Header"
 import Ws from './source/scss/components/ws/Ws';
 import Mws from './source/scss/components/ws/Mws';
 import Periodo from './graficos/Periodo';
-import Categoria from './graficos/Categoria';
+// import Categoria from './graficos/Categoria';
+import Pizza from './graficos/Pizza';
+import Tempo from './graficos/Tempo';
+import Tendencia from './graficos/Tendencia';
+import Help from './source/scss/components/help/Help';
 
 const MENSAIS = require("./medias/media_mensal")
 
@@ -44,7 +48,7 @@ const Dashboard = () => {
       // Usar diretamente os dados de demonstração
       const dadosDemo = gerarDadosDemonstracao();
 
-      console.log("Dados de demonstração carregados com sucesso");
+      console.log("Dados de apresentação carregados com sucesso");
       setData(dadosDemo);
       setIsLoading(false);
     } catch (erro) {
@@ -358,7 +362,7 @@ const Dashboard = () => {
 
         <div className="card-body">
 
-          <h5 className="card-title">Quantidade de Chamados Finalizados por Período</h5>
+          <h3 className={`${styles.subtitulo}`}>Quantidade de Chamados Finalizados por Período</h3>
           <ResponsiveContainer width="100%" height={300}>
             <LineChart
               data={dadosVisao}
@@ -437,7 +441,7 @@ const Dashboard = () => {
       <>
 
         <Ws />
-        <Categoria />
+        {/* <Categoria /> */}
       </>
     );
   };
@@ -450,55 +454,7 @@ const Dashboard = () => {
 
         <Ws />
         {/* Gráfico de Pizza - Categorias */}
-        <div className="bg-white rounded-lg  p-4 col col-6">
-          <h3 className="text-lg font-medium mb-4 text-center">Distribuição por Categoria</h3>
-          <ResponsiveContainer width="100%" height={250}>
-            <PieChart>
-              <Pie
-                data={data.pizzaCategorias}
-                cx="50%"
-                cy="50%"
-                labelLine={false}
-                label={({ name, percent }) => percent > 0.05 ? `${name}: ${(percent * 100).toFixed(0)}%` : ''}
-                outerRadius={80}
-                fill="#8884d8"
-                dataKey="value"
-              >
-                {data.pizzaCategorias.map((entry, index) => (
-                  <Cell key={`cell-${index}`} fill={CORES[index % CORES.length]} />
-                ))}
-              </Pie>
-              <Tooltip formatter={(value, name) => [value, name]} />
-              <Legend />
-            </PieChart>
-          </ResponsiveContainer>
-        </div>
-
-        {/* Gráfico de Pizza - Prioridades */}
-        <div className="bg-white rounded-lg  p-4 col col-6">
-          <h3 className="text-lg font-medium mb-4 text-center">Distribuição por Prioridade</h3>
-          <ResponsiveContainer width="100%" height={250}>
-            <PieChart>
-              <Pie
-                data={data.pizzaPrioridades}
-                cx="50%"
-                cy="50%"
-                labelLine={false}
-                label={({ name, percent }) => percent > 0.05 ? `${name}: ${(percent * 100).toFixed(0)}%` : ''}
-                outerRadius={80}
-                fill="#8884d8"
-                dataKey="value"
-              >
-                {data.pizzaPrioridades.map((entry, index) => (
-                  <Cell key={`cell-${index}`} fill={CORES[index % CORES.length]} />
-                ))}
-              </Pie>
-              <Tooltip formatter={(value, name) => [value, name]} />
-              <Legend />
-            </PieChart>
-          </ResponsiveContainer>
-        </div>
-
+        <Pizza />
         {/* Gráfico de Pizza - Tipos */}
 
       </div>
@@ -537,31 +493,34 @@ const Dashboard = () => {
 
     return (
 
-      <div className={`${styles.kpi_card}`}>
-        <Card
-          titulo="Total de chamados"
-          identificador="Finalizados"
-          valor={455}
-          descricao="Referente a: Anos de 2023 a 2025"
-        />
-        <Card
-          titulo="Média Mensal de"
-          identificador="Finalização"
-          valor={mediaMensal}
-          descricao="Referente a: todos os meses de 2023 a 2025"
-        />
-        <Card
-          titulo="Média Trimestral de "
-          identificador="Finalização"
-          valor={mediaTrimestral}
-          descricao="Referente a: Últimos 12 meses"
-        />
-        <Card
-          titulo="Média Anual de  "
-          identificador="Finalização"
-          valor={mediaAnual}
-          descricao="Referente a: Anos de 2023 a 2025"
-        />
+      <div className="card p-2">
+        <h2 className={`${styles.titulo} text-center`}>Métricas</h2>
+        <div className={`${styles.kpi_card}`}>
+          <Card
+            titulo="Total de chamados"
+            identificador="Finalizados"
+            valor={455}
+            descricao="Referente a: Anos de 2023 a 2025"
+          />
+          <Card
+            titulo="Média Mensal de"
+            identificador="Finalização"
+            valor={mediaMensal}
+            descricao="Referente a: todos os meses de 2023 a 2025"
+          />
+          <Card
+            titulo="Média Trimestral de "
+            identificador="Finalização"
+            valor={mediaTrimestral}
+            descricao="Referente a: Últimos 12 meses"
+          />
+          <Card
+            titulo="Média Anual de  "
+            identificador="Finalização"
+            valor={mediaAnual}
+            descricao="Referente a: Anos de 2023 a 2025"
+          />
+        </div>
       </div>
 
     );
@@ -596,31 +555,20 @@ const Dashboard = () => {
       <div className="mb-6">
         <Ws />
         <div className="bg-white rounded-lg  p-4 mb-4">
-          <h3 className="text-xl font-medium mb-4">Comparação: Criação, Finalização e Categoria</h3>
+          {/* <h3 className={`${styles.titulo} text-xl font-medium mb-4`}>Comparação: Criação, Finalização e Categoria</h3> */}
+        
+          <Help/>
 
-          <div className="mb-6">
-            <h4 className="text-lg font-medium mb-2">Tempo Médio de Resolução por Categoria (em dias)</h4>
-            <ResponsiveContainer width="100%" height={300}>
-              <BarChart
-                data={dadosGrafico}
-                margin={{ top: 20, right: 30, left: 20, bottom: 5 }}
-              >
-                <CartesianGrid strokeDasharray="3 3" />
-                <XAxis dataKey="categoria" />
-                <YAxis label={{ value: 'Dias', angle: -90, position: 'insideLeft' }} />
-                <Tooltip formatter={(value) => `${value} dias`} />
-                <Legend />
-                <Bar dataKey="tempoMedio" name="Tempo Médio" fill="#8884d8" />
-                <Bar dataKey="tempoMinimo" name="Mínimo" fill="#82ca9d" />
-                <Bar dataKey="tempoMaximo" name="Máximo" fill="#ff8042" />
-              </BarChart>
-            </ResponsiveContainer>
-          </div>
+
+          {/* TEMPO MÉDIO COMECA AQUI */}
+          <Tempo />
+          <Ws />
 
           <div className="mt-8">
-            <h4 className="text-lg font-medium mb-2">Tendência de Tempo de Resolução nos Últimos 6 Meses</h4>
+            <h4 className={`${styles.titulo} text-lg font-medium mb-2`}>Tendência de Tempo de Resolução nos Últimos 6 Meses</h4>
+            <Mws />
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {dadosTendencia.map((item, index) => (
+              {/* {dadosTendencia.map((item, index) => (
 
                 <div class="">
                   <Mws />
@@ -646,19 +594,12 @@ const Dashboard = () => {
                     </ResponsiveContainer>
                   </div>
                 </div>
-              ))}
+              ))} */}
+
+              <Tendencia />
             </div>
           </div>
 
-          <div className="mt-6 p-4 bg-gray-50 rounded my-5">
-            <h4 className="font-medium mb-2">Interpretação dos Dados</h4>
-            <p>Esta seção compara o tempo entre a criação e finalização dos chamados por categoria.</p>
-            <ul className="list-disc ml-8 mt-2">
-              <li>O tempo médio de resolução varia por categoria, com <strong>Desenvolvimento</strong> normalmente exigindo mais tempo.</li>
-              <li>Observe a tendência dos últimos meses para verificar se há melhoria na eficiência de atendimento.</li>
-              <li>Chamados de <strong>Dúvidas</strong> tendem a ser resolvidos mais rapidamente que outros tipos.</li>
-            </ul>
-          </div>
         </div>
       </div>
     );
@@ -669,7 +610,7 @@ const Dashboard = () => {
       <div className="flex items-center justify-center h-screen">
         <div className="text-center">
           <p className="text-xl font-medium mb-4">Carregando dashboard...</p>
-          <p>Preparando os dados de demonstração</p>
+          <p>Preparando os dados de apresentação</p>
         </div>
       </div>
     );
@@ -700,10 +641,10 @@ const Dashboard = () => {
 
   return (
     <div className="bg-gray-100 min-h-screen p-4" >
- 
+
 
       <div id='dashboard'></div>
-      <h1>Métricas</h1>
+
 
       {renderizarKPIs()}
 

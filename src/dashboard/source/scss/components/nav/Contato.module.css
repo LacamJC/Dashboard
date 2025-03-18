@@ -1,0 +1,59 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.titulo {
+  color: #354b9c;
+  font-size: 2.5rem;
+  margin-top: 25px;
+  font-weight: normal !important;
+}
+
+.subtitulo {
+  color: #5a5a5a;
+  font-weight: normal !important;
+  font-size: 2rem;
+  margin-bottom: 15px !important;
+}
+
+.help {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  right: 0;
+}
+.help span {
+  font-size: 1.2rem;
+}
+.help button {
+  margin-left: 10px;
+  background-color: transparent;
+  border: 2px solid #354b9c;
+  color: #354b9c;
+  padding: 8px 16px;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 2px 2px 3px rgba(90, 90, 90, 0.2274509804);
+  transition: 0.5s ease all;
+  position: relative;
+}
+.help button::before {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #354b9c;
+  z-index: -1;
+  content: "";
+  top: 0;
+  left: 0;
+  transition: 0.5s ease all;
+  transform: translateX(-100%);
+}
+.help button:hover {
+  color: white;
+}
+.help button:hover::before {
+  transform: translateX(0);
+}/*# sourceMappingURL=Contato.module.css.map */

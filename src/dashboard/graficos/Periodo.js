@@ -275,7 +275,7 @@ const Periodo = () => {
 
             <div className={`${styles.check}`} >
                 <div className={` rounded-lg  p-4 `}>
-                    <h2 className="fs-4 font-medium mb-4">Visualização por Período</h2>
+                    <h2 className={`${styles.subtitulo}`}>Visualização por Período</h2>
                     <div className="flex space-x-4">
                         <button
                             onClick={() => { alterarVisao('mensal') }}
@@ -307,7 +307,7 @@ const Periodo = () => {
 
             <div className="card-body">
 
-                <h5 className="card-title">Quantidade de Chamados Finalizados por Período</h5>
+                <h5 className={`${styles.subtitulo}`}>Quantidade de Chamados Finalizados por Período</h5>
                 <ResponsiveContainer width="100%" height={300}>
                     <LineChart width={1000} height={400} data={dados} margin={{ top: 5, right: 30, left: 20, bottom: 5 }}>
                         <CartesianGrid strokeDasharray="3 3" />
@@ -328,27 +328,28 @@ const Periodo = () => {
                 </ResponsiveContainer>
 
             </div>
-        </div>
 
 
 
 
-        <div className="bg-white rounded-lg bg-primary p-4 mb-6">
 
-            <h3 className="text-lg font-medium mb-4">Chamados Finalizados por Categoria</h3>
-            <ResponsiveContainer width="100%" height={300}>
-                <BarChart data={catDados} margin={{ top: 5, right: 30, left: 20, bottom: 5 }}>
-                    <CartesianGrid strokeDasharray="3 3" />
-                    <XAxis dataKey="mes" />
-                    <YAxis />
-                    <Tooltip />
-                    <Legend />
-                    <Bar dataKey="suporte" fill="#8884d8" name="Suporte" />
-                    <Bar dataKey="projetos" fill="#82ca9d" name="Projetos" />
-                    <Bar dataKey="duvidas" fill="#ffc658" name="Dúvidas" />
-                    <Bar dataKey="desenvolvimento" fill="#a8a8a8" name="Desenvolvimento" />
-                </BarChart>
-            </ResponsiveContainer>
+            <div className="bg-white rounded-lg bg-primary p-4 mb-6">
+
+                <h3 className={`${styles.subtitulo}`}>Chamados Finalizados por Categoria</h3>
+                <ResponsiveContainer width="100%" height={300}>
+                    <BarChart data={catDados} margin={{ top: 5, right: 30, left: 20, bottom: 5 }}>
+                        <CartesianGrid strokeDasharray="3 3" />
+                        <XAxis dataKey="mes" />
+                        <YAxis />
+                        <Tooltip />
+                        <Legend />
+                        <Bar dataKey="suporte" fill="#8884d8" name="Suporte" />
+                        <Bar dataKey="projetos" fill="#82ca9d" name="Projetos" />
+                        <Bar dataKey="duvidas" fill="#ffc658" name="Dúvidas" />
+                        <Bar dataKey="desenvolvimento" fill="#a8a8a8" name="Desenvolvimento" />
+                    </BarChart>
+                </ResponsiveContainer>
+            </div>
         </div>
     </>)
 }
