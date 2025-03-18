@@ -35,7 +35,15 @@ nav {
         }
     }
 
-  
+    @media screen and (max-width: 620px) {
+        .upe {
+            .title {
+                color: red;
+                font-size: .5rem;
+                display: none;
+            }
+        }
+    }
 
     .logo {
         width: 80px;

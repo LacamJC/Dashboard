@@ -173,6 +173,12 @@ nav .logo img {
   margin-bottom: 15px !important;
 }
 
+@media screen and (max-width: 620px) {
+  * {
+    font-size: 16px;
+  }
+}
+
 .check {
   top: 0;
   background-color: white;

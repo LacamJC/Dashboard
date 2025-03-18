@@ -23,7 +23,7 @@ const Pizza = () => {
             <div className="card">
                 <div className="row bg-warnig mb-6 my-5">
                     {/* Gráfico de Pizza - Categorias */}
-                    <div className="bg-white rounded-lg  p-4 col col-6">
+                    <div className="bg-white rounded-lg  p-4 col col-md-6 col-12">
                         <h3 className={`${styles.subtitulo} text-lg font-medium mb-4 text-center`}>Distribuição por Categoria</h3>
                         <ResponsiveContainer width="100%" height={250}>
                             <PieChart>
@@ -47,7 +47,7 @@ const Pizza = () => {
                         </ResponsiveContainer>
                     </div>
                     {/* Gráfico de Pizza - Prioridades */}
-                    <div className="bg-white rounded-lg  p-4 col col-6">
+                    <div className="bg-white rounded-lg  p-4 col col-md-6 col-12">
                         <h3 className={`${styles.subtitulo} text-lg font-medium mb-4 text-center`}>Distribuição por Prioridade</h3>
                         <ResponsiveContainer width="100%" height={250}>
                             <PieChart>

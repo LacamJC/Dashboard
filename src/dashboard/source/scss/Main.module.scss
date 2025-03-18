@@ -4,7 +4,12 @@
 
 @import "./variables";
 
-
+*{
+    @media screen and (max-width: 620px)
+    {
+        font-size: 16px;
+    }
+}
 
 .check{
     // position: sticky;

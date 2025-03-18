@@ -56,4 +56,14 @@
 }
 .help button:hover::before {
   transform: translateX(0);
+}
+@media screen and (max-width: 600px) {
+  .help span {
+    font-size: 0.9rem;
+    display: none;
+  }
+  .help .button {
+    padding: 0;
+    font-size: 0.8rem;
+  }
 }/*# sourceMappingURL=Contato.module.css.map */

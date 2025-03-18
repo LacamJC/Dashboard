@@ -44,6 +44,13 @@ nav .upe .title {
   font-size: 1.5rem;
   margin-left: 15px;
 }
+@media screen and (max-width: 620px) {
+  nav .upe .title {
+    color: red;
+    font-size: 0.5rem;
+    display: none;
+  }
+}
 nav .logo {
   width: 80px;
   height: 80px;
