@@ -1,0 +1,56 @@
+@import "../../variables";
+
+.kpi_card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    margin: 50px 0px;
+
+    justify-content: space-around;
+    align-items: center;
+
+    .card {
+        padding: 25px 25px;
+        margin: 25px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: transparent;
+        border: 2px solid $cor1;
+        border-radius: 6px;
+        color: $cor1;
+        transition: .5s ease all;
+        position: relative;
+
+        &:hover {
+            box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.411);
+            transform: translate(5px, -5px);
+
+            color: white;
+            background-color: $cor1;
+        }
+
+        width: 300px;
+
+        h3 {
+            font-size: 1rem;
+            font-weight: bold;
+        }
+
+        p {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        .descricao{
+            color: $cor1;
+            font-weight: 400;
+            position: absolute;
+            font-size: .9rem;
+            bottom: -40px;
+
+        }
+    }
+}

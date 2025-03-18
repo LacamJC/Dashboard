@@ -1,0 +1,21 @@
+@import "../../variables";
+
+.button
+{
+    background-color: transparent;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5rem;
+    color: $cor1;
+    border: 2px solid $cor1;
+
+    transition: .5s  all;
+    margin: 10px;
+    border-radius: 0.333rem;
+    padding: 2px 30px;
+}
+
+.select{
+    background-color: $cor1;
+    border-color: $cor1;
+    color: white;
+}

@@ -1,0 +1,14 @@
+@import "./components/button/primary_button";
+@import "./components/kpi_card/kpi_card";
+@import "./components/nav/Nav.module.scss";
+
+.check{
+    // position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1;
+
+    // border-bottom: 2px solid rgba(0, 0, 0, 0.486);
+
+    // transform: translateX(90%);
+}

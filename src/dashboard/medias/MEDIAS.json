@@ -1,0 +1,76 @@
+{
+    "ANO_2023": {
+        "meses": {
+            "outubro": {
+                "chamados_finalizados": 4
+            },
+            "novembro": {
+                "chamados_finalizados": 45
+            },
+            "dezembro": {
+                "chamados_finalizados": 9
+            }
+        },
+
+        "trimestre": {
+            "chamados_finalizados" : 10 
+        }
+    },
+    "ANO_2024": {
+        "meses": {
+            "janeiro": {
+                "chamados_finalizados": 3
+            },
+            "fevereiro": {
+                "chamados_finalizados": 3
+            },
+            "marco": {
+                "chamados_finalizados": 4
+            },
+            "abril": {
+                "chamados_finalizados": 2
+            },
+            "maio": {
+                "chamados_finalizados": 22
+            },
+            "junho": {
+                "chamados_finalizados": 38
+            },
+            "julho": {
+                "chamados_finalizados": 63
+            },
+            "agosto": {
+                "chamados_finalizados": 35
+            },
+            "setembro": {
+                "chamados_finalizados": 36
+            },
+            "outubro": {
+                "chamados_finalizados": 36
+            },
+            "novembro": {
+                "chamados_finalizados": 42
+            },
+            "dezembro": {
+                "chamados_finalizados": 30
+            }
+        },
+
+        "trimestre" : {
+            "chamados_finalizados" : 59
+        }
+    },
+    "ANO_2025": {
+        "meses": {
+            "janeiro": {
+                "chamados_finalizados": 42
+            },
+            "fevereiro": {
+                "chamados_finalizados": 29
+            },
+            "marco": {
+                "chamados_finalizados": 13
+            }
+        }
+    }
+}

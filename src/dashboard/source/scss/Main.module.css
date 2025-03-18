@@ -1,0 +1,89 @@
+.button {
+  background-color: transparent;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.5rem;
+  color: #354b9c;
+  border: 2px solid #354b9c;
+  transition: 0.5s all;
+  margin: 10px;
+  border-radius: 0.333rem;
+  padding: 2px 30px;
+}
+
+.select {
+  background-color: #354b9c;
+  border-color: #354b9c;
+  color: white;
+}
+
+.kpi_card {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 50px 0px;
+  justify-content: space-around;
+  align-items: center;
+}
+.kpi_card .card {
+  padding: 25px 25px;
+  margin: 25px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: transparent;
+  border: 2px solid #354b9c;
+  border-radius: 6px;
+  color: #354b9c;
+  transition: 0.5s ease all;
+  position: relative;
+  width: 300px;
+}
+.kpi_card .card:hover {
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.411);
+  transform: translate(5px, -5px);
+  color: white;
+  background-color: #354b9c;
+}
+.kpi_card .card h3 {
+  font-size: 1rem;
+  font-weight: bold;
+}
+.kpi_card .card p {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.kpi_card .card .descricao {
+  color: #354b9c;
+  font-weight: 400;
+  position: absolute;
+  font-size: 0.9rem;
+  bottom: -40px;
+}
+
+nav {
+  background-color: rgb(255, 255, 255);
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+}
+nav .logo {
+  width: 80px;
+  height: 80px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav .logo img {
+  width: 100%;
+}
+
+.check {
+  top: 0;
+  background-color: white;
+  z-index: 1;
+}/*# sourceMappingURL=Main.module.css.map */
