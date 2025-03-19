@@ -557,7 +557,7 @@ const Dashboard = () => {
         <div className="bg-white rounded-lg  p-4 mb-4">
           {/* <h3 className={`${styles.titulo} text-xl font-medium mb-4`}>Comparação: Criação, Finalização e Categoria</h3> */}
         
-          <Help/>
+       
 
 
           {/* TEMPO MÉDIO COMECA AQUI */}
@@ -565,7 +565,8 @@ const Dashboard = () => {
           <Ws />
 
           <div className="mt-8">
-            <h4 className={`${styles.titulo} text-lg font-medium mb-2`}>Tendência de Tempo de Resolução nos Últimos 6 Meses</h4>
+            <h4 className={`${styles.titulo} text-lg font-medium mb-2`}>Tendência de Resolução nos Últimos 6 Meses</h4>
+            <p>Dados referentes a 01/10/2024 até 14/03/2025</p>
             <Mws />
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {/* {dadosTendencia.map((item, index) => (
@@ -681,6 +682,7 @@ const Dashboard = () => {
       {renderizarGraficosPizza()}
 
       {renderizarSecaoComparativa()}
+      
 
       <div className="text-center text-gray-500 text-sm mt-8">
         <p>Dashboard atualizado em {new Date().toLocaleString()}</p>

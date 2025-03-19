@@ -99,7 +99,7 @@ const Periodo = () => {
 
     const categoria_dados_trimestrais = [
         {
-            mes: '1º Trimestre/2023',
+            mes: '4º Trimestre/2023',
             suporte: 48,
             projetos: 10,
             duvidas: 0,

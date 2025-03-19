@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import styles from "../source/scss/Main.module.css"
 import Mws from '../source/scss/components/ws/Mws';
 import Ws from '../source/scss/components/ws/Ws';
+import Help from '../source/scss/components/help/Help';
 
 const Tendencia = () => {
     const CORES = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042', '#8884d8', '#82ca9d', '#ffc658', '#8dd1e1'];
@@ -13,10 +14,10 @@ const Tendencia = () => {
 
             [
                 { indice: 'Desenvolvimento' },
-                { mes: 'Outubro/2024', tempo: 1.8 },
-                { mes: 'Novembro/2024', tempo: 1.5 },
-                { mes: 'Dezembro/2024', tempo: 7 },
-                { mes: 'Janeiro/2025', tempo: 1.1 },
+                { mes: 'Outubro/2024', tempo: 7 },
+                { mes: 'Novembro/2024', tempo: 3 },
+                { mes: 'Dezembro/2024', tempo: 3 },
+                { mes: 'Janeiro/2025', tempo: 5 },
                 { mes: 'Fevereiro/2025', tempo: 0 },
                 { mes: 'Março/2025', tempo: 0 }
 
@@ -28,17 +29,17 @@ const Tendencia = () => {
                 { mes: 'Novembro/2024', tempo: 0 },
                 { mes: 'Dezembro/2024', tempo: 0 },
                 { mes: 'Janeiro/2025', tempo: 0 },
-                { mes: 'Fevereiro/2025', tempo: 3 },
-                { mes: 'Março/2025', tempo: 2 }
+                { mes: 'Fevereiro/2025', tempo: 5 },
+                { mes: 'Março/2025', tempo: 3 }
 
             ],
 
             [
                 { indice: 'Projetos' },
-                { mes: 'Outubro/2024', tempo: 7 },
-                { mes: 'Novembro/2024', tempo: 13 },
-                { mes: 'Dezembro/2024', tempo: 0.5 },
-                { mes: 'Janeiro/2025', tempo: 1.5 },
+                { mes: 'Outubro/2024', tempo: 2 },
+                { mes: 'Novembro/2024', tempo: 2 },
+                { mes: 'Dezembro/2024', tempo: 1 },
+                { mes: 'Janeiro/2025', tempo: 4 },
                 { mes: 'Fevereiro/2025', tempo: 0 },
                 { mes: 'Março/2025', tempo: 0 }
 
@@ -46,12 +47,12 @@ const Tendencia = () => {
 
             [
                 { indice: 'Suporte' },
-                { mes: 'Outubro/2024', tempo: 1 },
-                { mes: 'Novembro/2024', tempo: 1.6 },
-                { mes: 'Dezembro/2024', tempo: 4 },
-                { mes: 'Janeiro/2025', tempo: 1.1 }, //
-                { mes: 'Fevereiro/2025', tempo: 1 },
-                { mes: 'Março/2025', tempo: 1.2 }
+                { mes: 'Outubro/2024', tempo: 26 },
+                { mes: 'Novembro/2024', tempo: 36 },
+                { mes: 'Dezembro/2024', tempo: 27 },
+                { mes: 'Janeiro/2025', tempo: 30 }, //
+                { mes: 'Fevereiro/2025', tempo: 24 },
+                { mes: 'Março/2025', tempo: 10 }
 
             ]
 
@@ -94,20 +95,23 @@ const Tendencia = () => {
                                         <CartesianGrid strokeDasharray="3 3" />
                                         <XAxis dataKey="mes" />
                                         <YAxis domain={['dataMin', 'dataMax']} />
-                                        <Tooltip formatter={(value) => `${value} dias`} />
+                                        <Tooltip formatter={(value) => `${value}    `} />
                                         <Line
                                             type="monotone"
                                             dataKey="tempo"
                                             stroke={CORES[index % CORES.length]}
-                                            name="Média p/ mês"
+                                            name="Casos finalizados no mês"
                                         />
+                                        <Legend/>
                                     </LineChart>
                                 </ResponsiveContainer>
                             
                             </div>
+                           
                         </div>
                     );
                 })}
+                 {/* <Help/> */}
             </div>
 
 

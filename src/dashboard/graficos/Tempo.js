@@ -5,13 +5,19 @@ import styles from "../source/scss/Main.module.css"
 const Tempo = () => {
 
     const tempo_por_categoria = [
-        { categoria: 'Suporte', tempoMedio: 1, tempoMinimo: 1, tempoMaximo: 50 },
-        { categoria: 'Desenvolvimento', tempoMedio: 14, tempoMinimo: 1, tempoMaximo: 49 }, // certo
-        { categoria: 'Dúvidas', tempoMedio: 4, tempoMinimo: 2 , tempoMaximo: 8 }, // certo
-        { categoria: 'Projetos', tempoMedio: 13, tempoMinimo: 1, tempoMaximo: 50 }, // certo
+        { categoria: 'Categorias', suporte: 6, desenvolvimento: 46, projetos: 77, duvidas: 1 },
+        // { categoria: 'Desenvolvimento', tempoMedio: 14, tempoMinimo: 1, tempoMaximo: 49 }, // certo
+        // { categoria: 'Dúvidas', tempoMedio: 4, tempoMinimo: 2 , tempoMaximo: 8 }, // certo
+        // { categoria: 'Projetos', tempoMedio: 13, tempoMinimo: 1, tempoMaximo: 50 }, // certo
     ];
 
-   
+    // const tempo_medio_categoria = [
+    //     {
+    //         categoria
+    //     }
+    // ]
+
+
 
     return (
         <>
@@ -27,9 +33,10 @@ const Tempo = () => {
                         <YAxis label={{ value: 'Dias', angle: -90, position: 'insideLeft' }} />
                         <Tooltip formatter={(value) => `${value} dias`} />
                         <Legend />
-                        <Bar dataKey="tempoMedio" name="Tempo Médio" fill="#8884d8" />
-                        <Bar dataKey="tempoMinimo" name="Mínimo" fill="#82ca9d" />
-                        <Bar dataKey="tempoMaximo" name="Máximo" fill="#ff8042" />
+                        <Bar dataKey="Categorias" name="Suporte" fill="#8884d8" />
+                        <Bar dataKey="duvidas" name="Dúvidas" fill="#82ca9d" />
+                        <Bar dataKey="desenvolvimento" name="Desenvolvimento" fill="#ff8042" />
+                        <Bar dataKey="projetos" name="Projetos" fill="#ff21ff" />
                     </BarChart>
                 </ResponsiveContainer>
             </div>

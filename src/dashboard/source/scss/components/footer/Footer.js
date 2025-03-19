@@ -1,4 +1,4 @@
-import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter, FaWhatsapp } from "react-icons/fa";
 import logo from "../../../img/BITMAP.png"
 import styles from "./Footer.module.css"
 const Footer = () => {
@@ -15,22 +15,22 @@ const Footer = () => {
                     </div>
 
                     <ul className="nav col-md-4 justify-content-end list-unstyled d-flex">
-                        <li className={`${styles.icon} ms-3 fs-1`}>
-                            <a className="text-body-secondary" href="#">
+                        <li className={`${styles.icon} ms-3 fs-1`} title="Ir para o Whatsapp">
+                            <a className="text-body-secondary" href="https://wa.me/5511933633054" target="_blank">
                                 {/* Replace with your Twitter SVG or component */}
-                                <FaTwitter/>
+                                <FaWhatsapp/>
                             </a>
                         </li>
-                        <li className={`${styles.icon} ms-3 fs-1`}>
-                            <a className="text-body-secondary" href="#">
+                        <li className={`${styles.icon} ms-3 fs-1`} title="Ir para o Instagram">
+                            <a className="text-body-secondary" href="https://www.instagram.com/multisoluction/" target="_blank">
                                 {/* Replace with your Instagram SVG or component */}
                                 <FaInstagram/>
                             </a>
                         </li>
-                        <li className={`${styles.icon} ms-3 fs-1`}>
-                            <a className="text-body-secondary" href="#">
+                        <li className={`${styles.icon} ms-3 fs-1`} title="Ir para o Linkedin">
+                            <a className="text-body-secondary" href="https://www.linkedin.com/company/multi-soluction/?viewAsMember=true" target="_blank">
                                 {/* Replace with your Facebook SVG or component */}
-                                <FaFacebook />
+                                <FaLinkedin />
                             </a>
                         </li>
                     </ul>
