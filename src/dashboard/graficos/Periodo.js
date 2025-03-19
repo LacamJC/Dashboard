@@ -36,19 +36,19 @@ const Periodo = () => {
 
     const dadosParaGrafico_trimestral = [
 
-        { mes: '1º Trimestre/2023', chamados: 3 },
-        { mes: '1º Trimestre/2024', chamados: 107 },
-        { mes: '2º Trimestre/2024', chamados: 96 },
-        { mes: '3º Trimestre/2024', chamados: 118 },
-        { mes: "4º Trimestre/2024", chamados: 90 },
-        { mes: '1º Trimestre/2025', chamados: 65 }
+        { mes: '4º Trimestre/2023', chamados: 57 },
+        { mes: '1º Trimestre/2024', chamados: 10 },
+        { mes: '2º Trimestre/2024', chamados: 62 },
+        { mes: '3º Trimestre/2024', chamados: 134 },
+        { mes: "4º Trimestre/2024", chamados: 108 },
+        { mes: '1º Trimestre/2025', chamados: 84 }
     ]
 
     const dadosParaGrafico_anual = [
 
-        { mes: "Ano 2023", chamados: 12 },
-        { mes: "Ano 2024", chamados: 269 },
-        { mes: "Ano 2025", chamados: 65 }
+        { mes: "Ano 2023", chamados: 57 },
+        { mes: "Ano 2024", chamados: 314 },
+        { mes: "Ano 2025", chamados: 84 }
 
     ]
 
@@ -100,10 +100,10 @@ const Periodo = () => {
     const categoria_dados_trimestrais = [
         {
             mes: '4º Trimestre/2023',
-            suporte: 48,
-            projetos: 10,
+            suporte: 12,
+            projetos: 0,
             duvidas: 0,
-            desenvolvimento: 102,
+            desenvolvimento: 45,
         },
 
         {
@@ -135,6 +135,15 @@ const Periodo = () => {
             desenvolvimento: 13,
         },
 
+        {
+            mes: "1º Trimestre/2025",
+            suporte: 65,
+            projetos: 4,
+            duvidas: 8,
+            desenvolvimento: 7,
+
+        }
+
     ]
 
     const categoria_dados_mensal = [
@@ -143,7 +152,7 @@ const Periodo = () => {
             suporte: 0,
             projetos: 0,
             duvidas: 0,
-            desenvolvimento: 4,
+            desenvolvimento: 3,
         },
         {
             mes: 'Novembro/2023',
