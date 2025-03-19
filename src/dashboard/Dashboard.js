@@ -554,7 +554,7 @@ const Dashboard = () => {
     return (
       <div className="mb-6">
         <Ws />
-        <div className="bg-white rounded-lg  p-4 mb-4">
+        <div className="bg-whte rounded-lg  p-4 mb-4 card">
           {/* <h3 className={`${styles.titulo} text-xl font-medium mb-4`}>Comparação: Criação, Finalização e Categoria</h3> */}
         
        
@@ -651,7 +651,7 @@ const Dashboard = () => {
 
 
 
-      <div className="bg-white rounded-lg  p-4 mb-6">
+      <div className=" mt-5">
         <Periodo />
         {/* <h3 className="text-lg font-medium mb-4">Quantidade de Chamados Finalizados por Período</h3>
         <ResponsiveContainer width="100%" height={300}>
