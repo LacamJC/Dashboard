@@ -99,19 +99,20 @@ const Tendencia = () => {
                                         <Line
                                             type="monotone"
                                             dataKey="tempo"
-                                            stroke={CORES[index % CORES.length]}
+                                            stroke={CORES[8]}
+                                            strokeWidth={2}
                                             name="Casos finalizados no mês"
                                         />
-                                        <Legend/>
+                                        <Legend />
                                     </LineChart>
                                 </ResponsiveContainer>
-                            
+
                             </div>
-                           
+
                         </div>
                     );
                 })}
-                 {/* <Help/> */}
+                {/* <Help/> */}
             </div>
 
 
