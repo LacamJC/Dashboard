@@ -561,8 +561,8 @@ const Dashboard = () => {
 
 
           {/* TEMPO MÉDIO COMECA AQUI */}
-          <Tempo />
-          <Ws />
+          {/* <Tempo /> */}
+          {/* <Ws /> */}
 
           <div className="mt-8">
             <h4 className={`${styles.titulo} text-lg font-medium mb-2`}>Tendência de Resolução nos Últimos 6 Meses</h4>

@@ -58,6 +58,8 @@ const Tendencia = () => {
 
 
         ];
+
+        var cont  = 0
     return (
         <>
             {/* <h5 className="font-medium mb-2">{tendencia[0].indice}</h5>
@@ -82,7 +84,7 @@ const Tendencia = () => {
 
                 {tendencia.map((item, index) => {
                     const dadosGrafico = item.slice(1); // Remove o primeiro elemento (indice)
-
+                    cont++
                     return (
                         <div>
                             <div key={index} className="border rounded p-2 mb-4">
@@ -99,7 +101,7 @@ const Tendencia = () => {
                                         <Line
                                             type="monotone"
                                             dataKey="tempo"
-                                            stroke={CORES[8]}
+                                            stroke={CORES[cont]}
                                             strokeWidth={2}
                                             name="Casos finalizados no mês"
                                         />
