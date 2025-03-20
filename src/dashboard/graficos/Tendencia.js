@@ -12,47 +12,51 @@ const Tendencia = () => {
         [
 
 
+         
+
+            // [
+            //     { indice: 'Dúvidas' },
+            //     { mes: 'Outubro/2024', tempo: 0 },
+            //     { mes: 'Novembro/2024', tempo: 0 },
+            //     { mes: 'Dezembro/2024', tempo: 0 },
+            //     { mes: 'Janeiro/2025', tempo: 0 },
+            //     { mes: 'Fevereiro/2025', tempo: 5 },
+            //     { mes: 'Março/2025', tempo: 3 }
+
+            // ],
+
+            // [
+            //     { indice: 'Projetos' },
+            //     { mes: 'Outubro/2024', tempo: 2 },
+            //     { mes: 'Novembro/2024', tempo: 2 },
+            //     { mes: 'Dezembro/2024', tempo: 1 },
+            //     { mes: 'Janeiro/2025', tempo: 4 },
+            //     { mes: 'Fevereiro/2025', tempo: 0 },
+            //     // { mes: 'Março/2025', tempo: 0 }
+
+            // ],
+
             [
-                { indice: 'Desenvolvimento' },
-                { mes: 'Outubro/2024', tempo: 7 },
-                { mes: 'Novembro/2024', tempo: 4 },
-                { mes: 'Dezembro/2024', tempo: 2 },
-                { mes: 'Janeiro/2025', tempo: 7 },
-                { mes: 'Fevereiro/2025', tempo: 0 },
-                { mes: 'Março/2025', tempo: 0 }
+                { indice: 'Desenvolvimento/Projetos' },
+                // { mes: "", tempo : 0},
+                { mes: 'Out/2024', tempo: 9 },
+                { mes: 'Nov/2024', tempo: 6 },
+                { mes: 'Dez/2024', tempo: 3 },
+                { mes: 'Jan/2025', tempo: 11 },
+                { mes: 'Fev/2025', tempo: 4 }
+               
+                // { mes: 'Março/2025', tempo: 0 }
 
             ],
 
             [
-                { indice: 'Dúvidas' },
-                { mes: 'Outubro/2024', tempo: 0 },
-                { mes: 'Novembro/2024', tempo: 0 },
-                { mes: 'Dezembro/2024', tempo: 0 },
-                { mes: 'Janeiro/2025', tempo: 0 },
-                { mes: 'Fevereiro/2025', tempo: 5 },
-                { mes: 'Março/2025', tempo: 3 }
-
-            ],
-
-            [
-                { indice: 'Projetos' },
-                { mes: 'Outubro/2024', tempo: 2 },
-                { mes: 'Novembro/2024', tempo: 2 },
-                { mes: 'Dezembro/2024', tempo: 1 },
-                { mes: 'Janeiro/2025', tempo: 4 },
-                { mes: 'Fevereiro/2025', tempo: 0 },
-                { mes: 'Março/2025', tempo: 0 }
-
-            ],
-
-            [
-                { indice: 'Suporte' },
-                { mes: 'Outubro/2024', tempo: 27 },
-                { mes: 'Novembro/2024', tempo: 36 },
-                { mes: 'Dezembro/2024', tempo: 27 },
-                { mes: 'Janeiro/2025', tempo: 30 }, //
-                { mes: 'Fevereiro/2025', tempo: 24 },
-                { mes: 'Março/2025', tempo: 10 }
+                { indice: 'Suporte/Dúvidas' },
+                { mes: 'Out/2024', tempo: 27 },
+                { mes: 'Nov/2024', tempo: 36 },
+                { mes: 'Dez/2024', tempo: 27 },
+                { mes: 'Jan/2025', tempo: 30 },
+                { mes: 'Fev/2025', tempo: 29 }
+                // { mes: 'Março/2025', tempo: 13 }
 
             ]
 
@@ -89,14 +93,14 @@ const Tendencia = () => {
                         <div>
                             <div key={index} className="border rounded p-2 mb-4">
                                 <h5 className={`${styles.subtitulo}`}>{item[0].indice}</h5>
-                                <ResponsiveContainer width="100%" height={150}>
+                                <ResponsiveContainer width="100%" height={320}>
                                     <LineChart
                                         data={dadosGrafico}
                                         margin={{ top: 5, right: 5, left: 5, bottom: 5 }}
                                     >
                                         <CartesianGrid strokeDasharray="3 3" />
                                         <XAxis dataKey="mes" />
-                                        <YAxis domain={['dataMin', 'dataMax']} />
+                                        <YAxis domain={[0, 'dataMax']} />
                                         <Tooltip formatter={(value) => `${value}    `} />
                                         <Line
                                             type="monotone"

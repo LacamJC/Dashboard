@@ -473,13 +473,13 @@ const Dashboard = () => {
       total_chamados_meses += element
     });
 
-    const mediaMensal = 25
+    const mediaMensal = 26
 
 
     // const CHAMADOS_QUANTIDADE_TRIMESTRE = excel_data.
-    const mediaTrimestral = 75
+    const mediaTrimestral = 97
 
-    const mediaAnual = 151
+    const mediaAnual = 154
 
     return (
 
@@ -489,7 +489,7 @@ const Dashboard = () => {
           <Card
             titulo="Total de chamados"
             identificador="Finalizados"
-            valor={455}
+            valor={459}
             descricao="Referente a: Anos de 2023 a 2025"
           />
           <Card
@@ -555,7 +555,7 @@ const Dashboard = () => {
           {/* <Ws /> */}
 
           <div className="mt-8">
-            <h4 className={`${styles.titulo} text-lg font-medium mb-2`}>Tendência de Resolução nos Últimos 6 Meses</h4>
+            <h4 className={`${styles.titulo} text-lg font-medium mb-2`}>Tendência de Resolução nos Últimos 5 Meses</h4>
             <p>Dados referentes a 01/10/2024 até 14/03/2025</p>
             <Mws />
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

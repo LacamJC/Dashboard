@@ -14,24 +14,24 @@ const Periodo = () => {
     }, [])
 
     const dadosParaGrafico_mensal = [
-        { mes: 'Outubro/2023', chamados: 3 },
-        { mes: 'Novembro/2023', chamados: 45 },
-        { mes: 'Dezembro/2023', chamados: 9 },
-        { mes: 'Janeiro/2024', chamados: 3 },
-        { mes: 'Fevereiro/2024', chamados: 3 },
-        { mes: 'Março/2024', chamados: 4 },
-        { mes: 'Abril/2024', chamados: 2 },
-        { mes: 'Maio/2024', chamados: 22 },
-        { mes: 'Junho/2024', chamados: 38 },
-        { mes: 'Julho/2024', chamados: 63 },
-        { mes: 'Agosto/2024', chamados: 35 },
-        { mes: 'Setembro/2024', chamados: 36 },
-        { mes: 'Outubro/2024', chamados: 36 },
-        { mes: 'Novembro/2024', chamados: 42 },
-        { mes: 'Dezembro/2024', chamados: 30 },
-        { mes: 'Janeiro/2025', chamados: 42 },
-        { mes: 'Fevereiro/2025', chamados: 29 },
-        { mes: 'Março/2025', chamados: 13 }
+        { mes: 'Out/2023', chamados: 3 },
+        { mes: 'Nov/2023', chamados: 45 },
+        { mes: 'Dez/2023', chamados: 9 },
+        { mes: 'Jan/2024', chamados: 3 },
+        { mes: 'Fev/2024', chamados: 3 },
+        { mes: 'Mar/2024', chamados: 4 },
+        { mes: 'Abr/2024', chamados: 2 },
+        { mes: 'Mai/2024', chamados: 22 },
+        { mes: 'Jun/2024', chamados: 38 },
+        { mes: 'Jul/2024', chamados: 63 },
+        { mes: 'Ago/2024', chamados: 35 },
+        { mes: 'Set/2024', chamados: 36 },
+        { mes: 'Out/2024', chamados: 36 },
+        { mes: 'Nov/2024', chamados: 42 },
+        { mes: 'Dez/2024', chamados: 30 },
+        { mes: 'Jan/2025', chamados: 42 },
+        { mes: 'Fev/2025', chamados: 31 },
+        { mes: 'Mar/2025', chamados: 15 }
     ];
 
     const dadosParaGrafico_trimestral = [
@@ -41,14 +41,14 @@ const Periodo = () => {
         { mes: '2º Trimestre/2024', chamados: 62 },
         { mes: '3º Trimestre/2024', chamados: 134 },
         { mes: "4º Trimestre/2024", chamados: 108 },
-        { mes: '1º Trimestre/2025', chamados: 84 }
+        { mes: '1º Trimestre/2025', chamados: 88 }
     ]
 
     const dadosParaGrafico_anual = [
 
         { mes: "Ano 2023", chamados: 57 },
         { mes: "Ano 2024", chamados: 314 },
-        { mes: "Ano 2025", chamados: 84 }
+        { mes: "Ano 2025", chamados: 88 }
 
     ]
 
@@ -91,9 +91,9 @@ const Periodo = () => {
         {
             mes: 'Ano 2025',
             suporte: 65,
-            projetos: 4,
+            projetos: 6,
             duvidas: 8,
-            desenvolvimento: 7
+            desenvolvimento: 9
         }
     ]
 
@@ -138,9 +138,9 @@ const Periodo = () => {
         {
             mes: "1º Trimestre/2025",
             suporte: 65,
-            projetos: 4,
+            projetos: 6,
             duvidas: 8,
-            desenvolvimento: 7,
+            desenvolvimento: 9,
 
         }
 
@@ -148,130 +148,130 @@ const Periodo = () => {
 
     const categoria_dados_mensal = [
         {
-            mes: 'Outubro/2023',
+            mes: 'Out/2023',
             suporte: 0,
             projetos: 0,
             duvidas: 0,
             desenvolvimento: 3,
         },
         {
-            mes: 'Novembro/2023',
+            mes: 'Nov/2023',
             suporte: 8,
             projetos: 0,
             duvidas: 0,
             desenvolvimento: 37,
         },
         {
-            mes: 'Dezembro/2023',
+            mes: 'Dez/2023',
             suporte: 4,
             projetos: 0,
             duvidas: 0,
             desenvolvimento: 5,
         },
         {
-            mes: 'Janeiro/2024',
+            mes: 'Jan/2024',
             suporte: 1,
             projetos: 0,
             duvidas: 0,
             desenvolvimento: 2,
         },
         {
-            mes: 'Fevereiro/2024',
+            mes: 'Fev/2024',
             suporte: 1,
             projetos: 0,
             duvidas: 0,
             desenvolvimento: 2,
         },
         {
-            mes: 'Março/2024',
+            mes: 'Mar/2024',
             suporte: 0,
             projetos: 0,
             duvidas: 0,
             desenvolvimento: 4,
         },
         {
-            mes: 'Abril/2024',
+            mes: 'Abr/2024',
             suporte: 1,
             projetos: 0,
             duvidas: 0,
             desenvolvimento: 1,
         },
         {
-            mes: 'Maio/2024',
+            mes: 'Mai/2024',
             suporte: 20,
             projetos: 0,
             duvidas: 0,
             desenvolvimento: 2,
         },
         {
-            mes: 'Junho/2024',
+            mes: 'Jun/2024',
             suporte: 38,
             projetos: 0,
             duvidas: 0,
             desenvolvimento: 0,
         },
         {
-            mes: 'Julho/2024',
+            mes: 'Jul/2024',
             suporte: 49,
             projetos: 2,
             duvidas: 0,
             desenvolvimento: 12,
         },
         {
-            mes: 'Agosto/2024',
+            mes: 'Ago/2024',
             suporte: 34,
             projetos: 0,
             duvidas: 0,
             desenvolvimento: 1,
         },
         {
-            mes: 'Setembro/2024',
+            mes: 'Set/2024',
             suporte: 35,
             projetos: 0,
             duvidas: 0,
             desenvolvimento: 1,
         },
         {
-            mes: 'Outubro/2024',
+            mes: 'Out/2024',
             suporte: 27,
             projetos: 2,
             duvidas: 0,
             desenvolvimento: 7,
         },
         {
-            mes: 'Novembro/2024',
+            mes: 'Nov/2024',
             suporte: 36,
             projetos: 2,
             duvidas: 0,
             desenvolvimento: 4,
         },
         {
-            mes: 'Dezembro/2024',
+            mes: 'Dez/2024',
             suporte: 27,
             projetos: 1,
             duvidas: 0,
             desenvolvimento: 2,
         },
         {
-            mes: 'Janeiro/2025',
+            mes: 'Jan/2025',
             suporte: 31,
             projetos: 4,
             duvidas: 0,
             desenvolvimento: 7,
         },
         {
-            mes: 'Fevereiro/2025',
+            mes: 'Fev/2025',
             suporte: 24,
-            projetos: 0,
+            projetos: 1,
             duvidas: 5,
-            desenvolvimento: 0,
+            desenvolvimento: 1,
         },
         {
-            mes: 'Março/2025',
+            mes: 'Mar/2025',
             suporte: 10,
-            projetos: 0,
+            projetos: 1,
             duvidas: 3,
-            desenvolvimento: 0,
+            desenvolvimento: 1,
         },
     ]
 

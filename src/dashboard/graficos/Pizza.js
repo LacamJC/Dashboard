@@ -6,8 +6,8 @@ const Pizza = () => {
     const categoria_dados_pizza = [
         { name: 'Suporte', value: 346 },
         { name: 'Projetos', value: 11 },
-        { name: 'Dúvidas', value: 8 },
-        { name: 'Desenvolvimento', value: 90 },
+        { name: 'Dúvidas', value: 10 },
+        { name: 'Desenvolvimento', value: 92 },
     ]
 
     const prioridade_dados_pizza = [
