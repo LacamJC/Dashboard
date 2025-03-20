@@ -4,14 +4,13 @@
 
 @import "./variables";
 
-*{
-    @media screen and (max-width: 620px)
-    {
+* {
+    @media screen and (max-width: 620px) {
         font-size: 16px;
     }
 }
 
-.check{
+.check {
     // position: sticky;
     top: 0;
     background-color: white;
@@ -22,3 +21,12 @@
     // transform: translateX(90%);
 }
 
+.subsubtitulo {
+    font-size: 1.4rem;
+    @media screen and (width:1024px)
+    {
+        font-size: .9rem;
+    }
+    font-weight: 400;
+    color: $cor1;
+}

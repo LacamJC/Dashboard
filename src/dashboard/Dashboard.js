@@ -473,28 +473,18 @@ const Dashboard = () => {
       total_chamados_meses += element
     });
 
-    const mediaMensal = Math.round(
-      // data.mensal.reduce((sum, item) => sum + item.quantidade, 0) / Math.max(1, data.mensal.length)
-      // (total_chamados_meses) / MENSAIS.MENSAIS.length
-      30 // MEDIA DE TODOS OS MESES DE 2023 A  2025
-    );
+    const mediaMensal = 25
 
 
     // const CHAMADOS_QUANTIDADE_TRIMESTRE = excel_data.
-    const mediaTrimestral = Math.round(
-      // data.trimestral.reduce((sum, item) => sum + item.quantidade, 0) / Math.max(1, data.trimestral.length)
-      97 // ULTIMOS 12 MESES
-    );
+    const mediaTrimestral = 75
 
-    const mediaAnual = Math.round(
-      // data.anual.reduce((sum, item) => sum + item.quantidade, 0) / Math.max(1, data.anual.length)
-      151 // ANO DE 2023 A 2025
-    );
+    const mediaAnual = 151
 
     return (
 
       <div className="card p-2">
-        <h2 className={`${styles.titulo} text-center`}>Métricas</h2>
+        {/* <h2 className={`${styles.titulo} text-center`}>Métricas</h2> */}
         <div className={`${styles.kpi_card}`}>
           <Card
             titulo="Total de chamados"

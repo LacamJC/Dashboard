@@ -15,9 +15,9 @@ const Tendencia = () => {
             [
                 { indice: 'Desenvolvimento' },
                 { mes: 'Outubro/2024', tempo: 7 },
-                { mes: 'Novembro/2024', tempo: 3 },
-                { mes: 'Dezembro/2024', tempo: 3 },
-                { mes: 'Janeiro/2025', tempo: 5 },
+                { mes: 'Novembro/2024', tempo: 4 },
+                { mes: 'Dezembro/2024', tempo: 2 },
+                { mes: 'Janeiro/2025', tempo: 7 },
                 { mes: 'Fevereiro/2025', tempo: 0 },
                 { mes: 'Março/2025', tempo: 0 }
 
@@ -47,7 +47,7 @@ const Tendencia = () => {
 
             [
                 { indice: 'Suporte' },
-                { mes: 'Outubro/2024', tempo: 26 },
+                { mes: 'Outubro/2024', tempo: 27 },
                 { mes: 'Novembro/2024', tempo: 36 },
                 { mes: 'Dezembro/2024', tempo: 27 },
                 { mes: 'Janeiro/2025', tempo: 30 }, //

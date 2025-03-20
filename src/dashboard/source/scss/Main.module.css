@@ -79,7 +79,6 @@
   box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.411);
   color: white;
   background-color: #354b9c;
-  transform: perspective();
 }
 .kpi_card .card h3 {
   font-size: 1rem;
@@ -190,4 +189,15 @@ nav .logo img {
   top: 0;
   background-color: white;
   z-index: 1;
+}
+
+.subsubtitulo {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #354b9c;
+}
+@media screen and (width: 1024px) {
+  .subsubtitulo {
+    font-size: 0.9rem;
+  }
 }/*# sourceMappingURL=Main.module.css.map */

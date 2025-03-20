@@ -170,10 +170,10 @@ const Periodo = () => {
         },
         {
             mes: 'Janeiro/2024',
-            suporte: 37,
-            projetos: 10,
+            suporte: 1,
+            projetos: 0,
             duvidas: 0,
-            desenvolvimento: 59,
+            desenvolvimento: 2,
         },
         {
             mes: 'Fevereiro/2024',

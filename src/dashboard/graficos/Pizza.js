@@ -30,10 +30,12 @@ const Pizza = () => {
     return (
         <>
             <div className="card">
+               
                 <div className="row bg-warnig mb-6 my-5">
+                {/* <h2 className={`${styles.titulo} text-center mb-5`}>Distribuição por segmento</h2> */}
                     {/* Gráfico de Pizza - Categorias */}
                     <div className="bg-white rounded-lg  p-4 col col-md-4 col-12">
-                        <h3 className={`${styles.subtitulo} text-lg font-medium mb-4 text-center`}>Distribuição por Categoria</h3>
+                        <h3 className={`${styles.subsubtitulo} text-lg font-medium mb-4 text-center`}>Distribuição por Categoria</h3>
                         <ResponsiveContainer width="100%" height={250}>
                             <PieChart>
                                 <Pie
@@ -57,7 +59,7 @@ const Pizza = () => {
                     </div>
                     {/* Gráfico de Pizza - Prioridades */}
                     <div className="bg-white rounded-lg  p-4 col col-md-4 col-12">
-                        <h3 className={`${styles.subtitulo} text-lg font-medium mb-4 text-center`}>Distribuição por Prioridade</h3>
+                        <h3 className={`${styles.subsubtitulo} text-lg font-medium mb-4 text-center`}>Distribuição por Prioridade</h3>
                         <ResponsiveContainer width="100%" height={250}>
                             <PieChart>
                                 <Pie
@@ -81,7 +83,7 @@ const Pizza = () => {
                     </div>
 
                     <div className="bg-white rounded-lg  p-4 col col-md-4 col-12">
-                        <h3 className={`${styles.subtitulo} text-lg font-medium mb-4 text-center`}>Tempo Médio de Resolução por Categoria</h3>
+                        <h3 className={`${styles.subsubtitulo} text-lg font-medium mb-4 text-center`}>Distribuição Médio por Dia</h3>
                         <ResponsiveContainer width="100%" height={250}>
                             <PieChart>
                                 <Pie
